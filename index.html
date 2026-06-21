@@ -1,0 +1,277 @@
+  <link rel="stylesheet" href="public/styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="logo"><span class="dot"></span>rahul<span style="color:var(--text-dimmer)">.r</span></div>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">menu</button>
+    <div class="nav-links" id="nav-links">
+      <a class="path" href="#summary">summary</a>
+      <a class="path" href="#skills">skills</a>
+      <a class="path" href="#experience">experience</a>
+      <a class="path" href="#contact">contact</a>
+    </div>
+    <a class="nav-cta" href="mailto:rahulrajesh474@gmail.com">say hello</a>
+  </div>
+</nav>
+
+<div class="wrap">
+  <header class="hero">
+    <div class="hero-grid">
+      <div>
+        <div class="terminal-line"><span class="prompt">~/portfolio</span>curl https://rahulr.dev/api/v1/me<span class="cursor"></span></div>
+        <h1>RAHUL <span class="last">R.</span></h1>
+        <p class="role">Backend-leaning Full-Stack Developer, building with <b>Node.js, React.js &amp; Next.js</b></p>
+        <p class="desc">4 years turning third-party APIs, ORMs, and stubborn data into software that holds up in production — from logistics platforms to payment integrations.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#experience">View experience →</a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        </div>
+        <div class="stat-row">
+          <div class="stat"><div class="num">4+</div><div class="lab">years exp</div></div>
+          <div class="stat"><div class="num">3</div><div class="lab">companies</div></div>
+          <div class="stat"><div class="num">10+</div><div class="lab">apis integrated</div></div>
+          <div class="stat"><div class="num">KL</div><div class="lab">kollam, kerala</div></div>
+        </div>
+      </div>
+
+      <div class="json-panel">
+        <div class="json-titlebar">
+          <span class="tdot r"></span><span class="tdot y"></span><span class="tdot g"></span>
+          <span class="fname">response.json</span>
+          <span class="json-status">200 OK</span>
+        </div>
+        <div class="json-body" id="jsonBody"></div>
+      </div>
+    </div>
+  </header>
+
+  <section id="summary">
+    <div class="endpoint-tag"><span class="method get">GET</span><span class="route">/summary</span><span class="status">200 · 18ms</span></div>
+    <div class="section-head"><h2 class="title reveal"><span class="hash">#</span>Summary</h2></div>
+    <div class="summary-panel reveal">
+      <p>Hello — I'm <b>Rahul R</b>, a Software Developer with <span class="highlight">4 years</span> of experience designing efficient, scalable web applications. I specialize in <b>Node.js, React.js, and Next.js</b>, with a track record of integrating complex third-party APIs and managing diverse database systems — the unglamorous plumbing that keeps real products running reliably.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="endpoint-tag"><span class="method get">GET</span><span class="route">/skills</span><span class="status">200 · 9ms</span></div>
+    <div class="section-head"><h2 class="title reveal"><span class="hash">#</span>Skills</h2></div>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="sk-head"><span class="sk-key">"backend"</span><h3>Backend Development</h3></div>
+        <div class="chip-row">
+          <span class="chip">Node.js</span>
+          <span class="chip">NestJS</span>
+          <span class="chip">AdonisJS</span>
+          <span class="chip">Express.js</span>
+          <span class="chip">TypeScript</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">RESTful APIs</span>
+          <span class="chip">JWT</span>
+          <span class="chip">Socket.io</span>
+          <span class="chip">Webhooks</span>
+          <span class="chip">OpenAI API</span>
+          <span class="chip">Third‑party APIs</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="sk-head"><span class="sk-key">"frontend"</span><h3>Frontend Development</h3></div>
+        <div class="chip-row">
+          <span class="chip">Next.js</span>
+          <span class="chip">React.js</span>
+          <span class="chip">TypeScript</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">HTML5</span>
+          <span class="chip">CSS3</span>
+          <span class="chip">Tailwind CSS</span>
+          <span class="chip">Bootstrap</span>
+          <span class="chip">Three.js</span>
+          <span class="chip">GSAP</span>
+          <span class="chip">Responsive Design</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="sk-head"><span class="sk-key">"database"</span><h3>Database Management</h3></div>
+        <div class="chip-row">
+          <span class="chip">PostgreSQL</span>
+          <span class="chip">MySQL</span>
+          <span class="chip">MongoDB</span>
+          <span class="chip">Redis</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="sk-head"><span class="sk-key">"orm"</span><h3>ORMs &amp; Data Modeling</h3></div>
+        <div class="chip-row">
+          <span class="chip">Lucid ORM</span>
+          <span class="chip">Sequelize</span>
+          <span class="chip">Mongoose</span>
+          <span class="chip">Drizzle ORM</span>
+        </div>
+      </div>
+      <div class="skill-card reveal" style="grid-column: span 2;">
+        <div class="sk-head"><span class="sk-key">"integrations"</span><h3>API &amp; Integration</h3></div>
+        <div class="chip-row">
+          <span class="chip">RESTful APIs</span><span class="chip">OpenAI (ChatGPT)</span><span class="chip">FedEx / DHL / Aramex / SMSA</span><span class="chip">RazorPay</span><span class="chip">Stripe</span><span class="chip">Flywire</span><span class="chip">Socket.io</span>
+        </div>
+      </div>
+      <div class="skill-card reveal" style="grid-column: span 2;">
+        <div class="sk-head"><span class="sk-key">"docs_testing"</span><h3>API Documentation &amp; Testing</h3></div>
+        <div class="chip-row">
+          <span class="chip">Swagger</span><span class="chip">Postman</span><span class="chip">Apidog</span><span class="chip">RESTful APIs</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="endpoint-tag"><span class="method get">GET</span><span class="route">/experience?order=desc</span><span class="status">200 · 24ms</span></div>
+    <div class="section-head"><h2 class="title reveal"><span class="hash">#</span>Experience</h2></div>
+
+    <div class="timeline">
+      <div class="job active reveal">
+        <span class="node"></span>
+        <div class="job-head">
+          <h3>Software Developer · Syntrio Technologies</h3>
+          <span class="badge active">active</span>
+        </div>
+        <div class="job-meta"><span>Jan 2024 — Mar 2026</span><span>Thiruvananthapuram, Kerala</span></div>
+        <ul>
+          <li>Develop and maintain scalable web applications using <b>Node.js, React.js, and Adonis.js</b>.</li>
+          <li>Integrate global logistics APIs (<b>FedEx, DHL, Aramex, SMSA</b>) for real-time shipment management.</li>
+          <li>Optimize database queries and indexing using <b>MySQL</b> to ensure maintainable, high-performance code.</li>
+        </ul>
+        <a class="job-link" href="https://syntrio.in/" target="_blank" rel="noopener">syntrio.in ↗</a>
+      </div>
+
+      <div class="job reveal">
+        <span class="node"></span>
+        <div class="job-head">
+          <h3>Jr. Software Developer · Spericorn Technology</h3>
+          <span class="badge archived">archived</span>
+        </div>
+        <div class="job-meta"><span>Jul 2022 — Oct 2023</span><span>Thiruvananthapuram, Kerala</span></div>
+        <ul>
+          <li>Collaborated on web application maintenance and development using <b>Express.js and PostgreSQL</b>.</li>
+          <li>Participated in rigorous code reviews and debugging to optimize system performance.</li>
+          <li>Utilized <b>Jira</b> for efficient project planning and task tracking within a team environment.</li>
+        </ul>
+      </div>
+
+      <div class="job reveal">
+        <span class="node"></span>
+        <div class="job-head">
+          <h3>Software Trainee · Logiprompt Techno Solutions</h3>
+          <span class="badge archived">archived</span>
+        </div>
+        <div class="job-meta"><span>Oct 2021 — Jul 2022</span><span>Thiruvananthapuram, Kerala</span></div>
+        <ul>
+          <li>Contributed to the planning, designing, creating, and testing phases of project development.</li>
+          <li>Wrote efficient, clean code to ensure optimal performance and scalability for web applications.</li>
+          <li>Developed a <b>Waste Management System</b> as a key project during this tenure.</li>
+        </ul>
+        <div class="chip-row" style="margin-top:12px;">
+          <span class="chip">Node.js</span><span class="chip">React.js</span><span class="chip">Ionic</span><span class="chip">Bootstrap</span><span class="chip">Git</span><span class="chip">MongoDB</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="endpoint-tag"><span class="method post">POST</span><span class="route">/contact</span><span class="status">ready</span></div>
+    <div class="section-head"><h2 class="title reveal"><span class="hash">#</span>Contact</h2></div>
+
+    <div class="contact-panel reveal">
+      <div class="contact-top">
+        <p>Open to backend-heavy and full-stack roles where APIs, data, and reliability actually matter. Reach out directly — no forms, no gatekeeping.</p>
+        <div style="margin-top:12px;">
+          <a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=1yiN4OnFxsHHLfT9BRdVdCTHOQGaPBMBY" target="_blank" rel="noopener" aria-label="Download resume">Download Resume</a>
+        </div>
+      </div>
+      <div class="contact-grid">
+        <a class="contact-item" href="mailto:rahulrajesh474@gmail.com">
+          <span class="ci-label">email</span>
+          <span class="ci-value">rahulrajesh474@gmail.com</span>
+        </a>
+        <div class="contact-item">
+          <span class="ci-label">phone</span>
+          <span class="ci-value">+91 79XXXXXXXX</span>
+          <div style="margin-top:8px;">
+            <a class="btn btn-ghost" href="mailto:rahulrajesh474@gmail.com?subject=Request%20for%20phone%20number&body=Hi%20Rahul%2C%0A%0AI%20would%20like%20to%20request%20your%20phone%20number%20for%20further%20discussion.%20Please%20share%20it%20if%20you%20agree.%0A%0AThanks." rel="noopener">Request phone via email</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="ci-label">location</span>
+          <span class="ci-value">Kollam, Kerala</span>
+        </div>
+        <a class="contact-item" href="https://github.com/rahulraji18" target="_blank" rel="noopener">
+          <span class="ci-label">github</span>
+          <span class="ci-value">github.com/rahulraji18</span>
+        </a>
+        <a class="contact-item" href="https://linkedin.com/in/rahul-rajeevan" target="_blank" rel="noopener">
+          <span class="ci-label">linkedin</span>
+          <span class="ci-value">in/rahul-rajeevan</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2026 Rahul R — built with Node.js energy</span>
+    <span>status: <span style="color:var(--accent)">available</span> · response time ~ instant</span>
+  </footer>
+</div>
+
+<script>
+  // Typing JSON response in hero
+  const jsonLines = [
+    '<span class="brace">{</span>',
+    '&nbsp;&nbsp;<span class="k">"name"</span>: <span class="s">"Rahul R"</span>,',
+    '&nbsp;&nbsp;<span class="k">"role"</span>: <span class="s">"Software Developer"</span>,',
+    '&nbsp;&nbsp;<span class="k">"stack"</span>: [<span class="s">"Node.js"</span>, <span class="s">"React.js"</span>, <span class="s">"Next.js"</span>],',
+    '&nbsp;&nbsp;<span class="k">"experience_years"</span>: <span class="n">4</span>,',
+    '&nbsp;&nbsp;<span class="k">"location"</span>: <span class="s">"Kollam, Kerala"</span>,',
+    '&nbsp;&nbsp;<span class="k">"specialties"</span>: [<span class="s">"REST APIs"</span>, <span class="s">"ORMs"</span>, <span class="s">"Payments"</span>],',
+    '&nbsp;&nbsp;<span class="k">"available"</span>: <span class="n">true</span>',
+    '<span class="brace">}</span>'
+  ];
+  const jsonBody = document.getElementById('jsonBody');
+  jsonLines.forEach((line, i) => {
+    const div = document.createElement('div');
+    div.className = 'ln';
+    div.style.animationDelay = (0.15 * i + 0.3) + 's';
+    div.innerHTML = line;
+    jsonBody.appendChild(div);
+  });
+
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if(e.isIntersecting){
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  reveals.forEach(r => io.observe(r));
+
+  // Mobile nav toggle
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinks = document.getElementById('nav-links');
+  if(navToggle && navLinks){
+    navToggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('mobile-open');
+      navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    // close menu when a link is clicked
+    navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      navLinks.classList.remove('mobile-open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    }));
+  }
+</script>
+
+</body>
+</html>
